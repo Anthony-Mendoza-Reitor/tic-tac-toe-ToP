@@ -1,9 +1,15 @@
 :root{
     background-color: black;
 }
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
 .container {
     width: 450px;
-    height: 450px;
+    height: 750px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -47,36 +53,41 @@ input{
     margin: 4px;
 }
 .gridcontent {
+    margin: 10px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     background-color: rgb(179, 149, 149);
     border-style: groove;
     border-radius: 10px;
+    border-color: grey;
 }
 .gridcontent > div{
     width: 0.33fr;
 }
 .gridcontent > div > * {
     padding: 20px;
+    color: brown;
+    text-shadow: 1px 1px black;
+    border-color: black;
 }
 .gridcontent > :first-child > :first-child {
     border-right-style: solid;
 }
-.gridcontent > .col1 > .item2 {
+.gridcontent > .col1 > .item10 {
     border-style: solid;
     border-left: none;
 }
 .gridcontent > :first-child > :last-child {
     border-right-style: solid;
 }
-.gridcontent > .col2 > .item2 {
+.gridcontent > .col2 > .item11 {
     border-top-style: solid;
     border-bottom-style: solid;
 }
 .gridcontent > :last-child > :first-child {
     border-left-style: solid;
 }
-.gridcontent > .col3 > .item2 {
+.gridcontent > .col3 > .item12 {
     border-style: solid;
     border-right: none;
 }
@@ -84,3 +95,33 @@ input{
     border-left-style: solid;
 }
 
+.dialog{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    height: 550px;
+    width: 480px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+}
+.closeDialog{
+    display: flex;
+    justify-content: right;
+    align-items: end;
+    margin-left: 90%;
+}
+.closeDialog > *{
+    height: 50px;
+    width: 50px;
+}
+.winnerAnnoucer{
+    margin-top: 40%;
+    font-size: 50px;
+}
+#logoO{
+    font-size: 150px;
+    margin-top: 25px;
+    color: rgb(179, 149, 149);
+    text-shadow: 1px 1px black;
+}

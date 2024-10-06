@@ -20,32 +20,61 @@
                 </div>
                 <div class="playerO">
                     <label for="playerO">PlayerO Name:</label>
-                    <input type="text" name="playerOname" id="playerOname" placeholder="Oblivion">
+                    <input type="text" name="playerOname" id="playerOname" placeholder="Optimus Prime">
                 </div>
             </form>
         </div>
         <div class="gameStart">
-            <button> Start Game!</button>
+            <button id="startButton"> Start Game!</button>
         </div>
         <div class="gameBoard">
             <div class="gridcontent">
                 <div class="col1">
-                    <div class="item1">X</div>
-                    <div class="item2">X</div>
-                    <div class="item3">X</div>
+                    <div class="item00">
+                        <p id="pos00">X</p>
+                    </div>
+                    <div class="item10">
+                        <p id="pos10">O</p>
+                    </div>
+                    <div class="item20">
+                        <p id="pos20">O</p>
+                    </div>
                 </div>
                 <div class="col2">
-                    <div class="item1">X</div>
-                    <div class="item2">X</div>
-                    <div class="item3">X</div>
+                    <div class="item01">
+                        <p id="pos01">O</p>
+                    </div>
+                    <div class="item11">
+                        <p id="pos11">X</p>
+                    </div>
+                    <div class="item21">
+                        <p id="pos21">X</p>
+                    </div>
                 </div>
                 <div class="col3">
-                    <div class="item1">X</div>
-                    <div class="item2">X</div>
-                    <div class="item3">X</div>
+                    <div class="item02">
+                        <p id="pos02">X</p>
+                    </div>
+                    <div class="item12">
+                        <p id="pos12">X</p>
+                    </div>
+                    <div class="item22">
+                        <p id="pos22">O</p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </body>
+<div class="dialog">
+    <div class="closeDialog">
+        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 48 48">
+            <path fill="#f44336" d="M44,24c0,11.045-8.955,20-20,20S4,35.045,4,24S12.955,4,24,4S44,12.955,44,24z"></path><path fill="#fff" d="M29.656,15.516l2.828,2.828l-14.14,14.14l-2.828-2.828L29.656,15.516z"></path><path fill="#fff" d="M32.484,29.656l-2.828,2.828l-14.14-14.14l2.828-2.828L32.484,29.656z"></path>
+        </svg>
+    </div>
+    <div class="winnerAnnoucer">
+        Winner!
+    </div>
+    <div class="winnerLogo"></div>
+</div>
 </html>
