@@ -1,0 +1,86 @@
+:root{
+    background-color: black;
+}
+.container {
+    width: 450px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    background-color: rgb(176, 190, 211);
+    border-radius: 10px;
+    font-size: 32px;
+}
+.header{
+    margin: 4px;
+    color: white;
+    text-shadow: 0.5px 0.5px black;
+    text-decoration-line: underline;
+    text-decoration-color: rgb(179, 149, 149);
+}
+.names{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 4px;
+}
+.playerX, .playerO{
+    margin: 4px;
+} 
+label, ::placeholder{
+    color: white;
+    text-shadow: 0.5px 0.5px black;
+}
+input{
+    background-color: rgb(179, 149, 149);
+    height: 24px;
+    border-radius: 25px;
+}
+.gameStart > button{
+    background-color: rgb(121, 84, 84);
+    color: white;
+    text-shadow: 0.5px 0.5px black;
+    border-radius: 50px;
+    margin: 4px;
+}
+.gridcontent {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: rgb(179, 149, 149);
+    border-style: groove;
+    border-radius: 10px;
+}
+.gridcontent > div{
+    width: 0.33fr;
+}
+.gridcontent > div > * {
+    padding: 20px;
+}
+.gridcontent > :first-child > :first-child {
+    border-right-style: solid;
+}
+.gridcontent > .col1 > .item2 {
+    border-style: solid;
+    border-left: none;
+}
+.gridcontent > :first-child > :last-child {
+    border-right-style: solid;
+}
+.gridcontent > .col2 > .item2 {
+    border-top-style: solid;
+    border-bottom-style: solid;
+}
+.gridcontent > :last-child > :first-child {
+    border-left-style: solid;
+}
+.gridcontent > .col3 > .item2 {
+    border-style: solid;
+    border-right: none;
+}
+.gridcontent > :last-child > :last-child {
+    border-left-style: solid;
+}
+
