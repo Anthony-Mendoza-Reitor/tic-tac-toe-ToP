@@ -3,6 +3,7 @@
 }
 body{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
@@ -124,4 +125,17 @@ input{
     margin-top: 25px;
     color: rgb(179, 149, 149);
     text-shadow: 1px 1px black;
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(238, 210, 210);
+    color: rgb(0, 0, 0);
+    text-shadow: 1px 1px white;
+    font-style: italic;
+    margin-top: auto;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
 }
